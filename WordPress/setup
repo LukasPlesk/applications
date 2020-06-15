@@ -13,7 +13,7 @@ echo "Lets start"
 
 FILE=/etc/plesk
 if test -f "$FILE"; then
-    echo "Nothing to do here. PLESK seems to be already insalled"
+    echo "Nothing to do here. PLESK seems to be already installed"
     echo "Seems like everything was already done" 
 else 
     printf '{\n"status":"Waiting for VM",\n"progress":"0"\n}' > /var/www/vhosts/default/htdocs/progress.json
